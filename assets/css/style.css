@@ -1,0 +1,226 @@
+
+/* *******************Les fonts************* */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+
+
+/* *****************Style du body******************** */
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1160px;
+    margin: auto;
+    background: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: "Lato", serif;
+}
+
+header {
+    background: #17abb3;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* *******************Photo de profil******************* */
+.profile-pic {
+    width: 10%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    float: left;
+    box-shadow: 0 0 0 5px white;
+
+}
+
+.profile-pic:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
+/* **************Partie information générale************** */
+.contact-info {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    font-size: 18px;
+    color: white;
+}
+
+.contact-info span i {
+    font-size: 20px; 
+}
+
+
+.contact-info {
+    margin-top: 10px;
+}
+
+#part1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.address a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.email a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 45px;
+}
+
+
+span img{
+    
+    margin-left: 10px;
+    height: 30px;
+    width: 20px;
+    color: #ffffff;
+    padding: auto 0;
+}
+
+.bullet  li i {
+    color: #17abb3;
+    margin: 5px 10px;
+    align-items: flex-start;
+}
+
+.bullet li::before {
+    content: "■"; 
+    color: #17abb3; 
+    font-size: 1.2em;
+    margin-right: 10px; 
+}
+
+ 
+.contact-info span {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+/* Effet de survol pour formations, stages et expériences */
+
+.education p, .experience p, .work-experience p {
+    position: relative;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease-in-out, border-left 0.3s ease-in-out;
+}
+
+/* Ajout du trait vertical et changement de couleur au survol */
+
+.education p:hover, .experience p:hover, .work-experience p:hover {
+    background-color: #f5f5f5; 
+    border-left: 5px solid #17abb3; 
+    padding-left: 15px; 
+}
+/* *****************Partie gauche du cv*********** */
+
+aside {
+    width: 30%;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 5px;
+    color: #17abb3;
+}
+
+
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 5px 0;
+}
+
+.languages p {
+
+    padding: 5px 0;
+}
+
+li span {
+    color: #17abb3;
+}
+
+.content {
+    width: 65%;
+    margin-left: 5%;
+}
+
+.content h3 {
+    color: #17abb3;
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+
+/* *******************Footer******************* */
+
+footer {
+    background:#17abb3 ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 5px 10px;
+}
+
+.social-icons a:hover {
+    font-size: 1.5rem;
+    opacity: 0.33;
+}
